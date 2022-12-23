@@ -1,8 +1,8 @@
 #! /bin/bash
 #
-# Coded by Khai Phan
+# Coded By N4ND4
 #
-# Email: khaiphan9x@gmail.com
+# Telegram - https://t.me/n4vpn
 #
 # Auto installer script for 
 # dropbear
@@ -11,13 +11,13 @@
 
 clear
 cd /tmp
-echo "Ban dang su dung script tu dong cai dat Dropbear cho Debian va Ubuntu duoc viet boi Khai Phan"
+echo " Dropbear One Click Auto Script By N4 "
 echo "================================================="
 echo "" 
-echo "Dang cap nhat tai nguyen..."
+echo "Starting Installation N4 Dropbear ..."
 apt-get update  > /dev/null 2>&1
 echo ""
-echo "Bat dau cai dat Dropbear"
+echo "NOW Installation N4 Dropbear"
 echo ""
 apt-get -y install dropbear ssh
 sed -i 's/NO_START\=1/NO_START\=0/g' /etc/default/dropbear
@@ -31,10 +31,10 @@ service dropbear start
 service sshd restart
 echo ""
 echo ""
-echo "Da hoan thanh cai dat Dropbear"
-echo "Dropbear dang chay tren port: 442, 80, 8080, 8484, 143, 109"
-echo "Hay tao 1 user moi de su dung"
+echo "Successfully Installed N4 Dropbear"
+echo "Listening Dropbear ports: 443, 80, 8080, 8484, 143, 109"
+echo "Script By N4ND4"
 echo ""
-echo "Dang khoi dong lai server..."
+echo " Server Restarting Now...."
 echo ""
 sleep 5 ; reboot
