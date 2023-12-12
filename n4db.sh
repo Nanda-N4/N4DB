@@ -21,8 +21,8 @@ echo "NOW Installation N4 Dropbear"
 echo ""
 apt-get -y install dropbear ssh
 sed -i 's/NO_START\=1/NO_START\=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT\=11/DROPBEAR_PORT\=44/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS\=/DROPBEAR_EXTRA_ARGS\=\"\-p 44 \-p 8 \-p 88 \-p 84 \-p 14 \-p 11\"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT\=443/DROPBEAR_PORT\=22/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS\=/DROPBEAR_EXTRA_ARGS\=\"\-p 443 \-p 8 \-p 88 \-p 84 \-p 143 \-p 11\"/g' /etc/default/dropbear
 sed -i 's/#PermitRootLogin prohibit\-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 sed -i 's/PermitRootLogin without\-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 sed -i 's/#PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
@@ -32,7 +32,7 @@ service sshd restart
 echo ""
 echo ""
 echo "Successfully Installed N4 Dropbear"
-echo "Listening Dropbear ports: 44, 8, 88, 84, 14, 11"
+echo "Listening Dropbear ports: 443, 8, 88, 84, 143, 110"
 echo "Script By N4ND4"
 echo ""
 echo " Server Restarting Now...."
