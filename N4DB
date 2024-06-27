@@ -2,14 +2,14 @@
 # change to NO_START=0 to enable Dropbear
 NO_START=0
 # the TCP port that Dropbear listens on
-DROPBEAR_PORT=44
+DROPBEAR_PORT=443
 
 # any additional arguments for Dropbear
-DROPBEAR_EXTRA_ARGS="-p 44 -p 8 "
+DROPBEAR_EXTRA_ARGS="-p 443 -p 8 "
 
 # specify an optional banner file containing a message to be
 # sent to clients before they connect, such as "/etc/issue.net"
-DROPBEAR_BANNER=""
+DROPBEAR_BANNER="<b><h6 style="text-align:center";><font color='#FF0000'> ✧ N4 VPN PRO FREE SERVER ✧ <br> ⚡⚡⚡⚡⚡⚡⚡<br> <br>✧ Want to Buy Private Server  - t.me/n4nd404  ✧ <br> ✧ Server By N4 VPN ✧</font>"
 
 # RSA hostkey file (default: /etc/dropbear/dropbear_rsa_host_key)
 #DROPBEAR_RSAKEY="/etc/dropbear/dropbear_rsa_host_key"
