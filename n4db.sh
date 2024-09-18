@@ -27,8 +27,9 @@ sed -i 's/#PermitRootLogin prohibit\-password/PermitRootLogin yes/g' /etc/ssh/ss
 sed -i 's/PermitRootLogin without\-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 sed -i 's/#PermitRootLogin no/PermitRootLogin yes/g' /etc/ssh/sshd_config
 sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-service dropbear start
-service sshd restart
+systemctl enable sshd
+systemctl restart sshd
+service restart dropbear
 echo ""
 echo ""
 echo "Successfully Installed N4 Dropbear"
